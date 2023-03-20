@@ -9,7 +9,8 @@ RUN npm i
 COPY . .
 
 ENV PORT=3000
+ENV DB_HOST=127.0.0.1
 
 EXPOSE ${PORT}
 
-CMD ["nodemon", "./dist/server.js"]
+CMD [ "npm", "start" ]
